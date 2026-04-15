@@ -17,6 +17,7 @@ function figmaAssetResolver() {
 }
 
   export default defineConfig({
+    base: '/Aboutme-portfolio/', // ← your exact repo name
     plugins: [react(), tailwindcss(), figmaAssetResolver()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
